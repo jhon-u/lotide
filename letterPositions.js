@@ -6,8 +6,8 @@ const eqArrays = function(arrayA, arrayB) {
       return false;
     }
   }
-  return true
-}
+  return true;
+};
 
 const assertArraysEqual  = function(arrayA, arrayB) {
   if (eqArrays(arrayA, arrayB)) {
@@ -27,7 +27,7 @@ const letterPositions = function(sentence) {
     } else {
       results[letter] = [index];
     }
-  }  
+  }
 
   return results;
 };
