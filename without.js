@@ -2,7 +2,7 @@ const without = function(source, itemsToRemove) {
   const result = [];
   for (let item of source) {
     if (itemsToRemove.indexOf(item) === - 1) {
-      result.push(item)
+      result.push(item);
     }
   }
   return result;
@@ -14,8 +14,8 @@ const eqArrays = function(arrayA, arrayB) {
       return false;
     }
   }
-  return true
-}
+  return true;
+};
 
 const assertArraysEqual  = function(arrayA, arrayB) {
   if (eqArrays(arrayA, arrayB)) {

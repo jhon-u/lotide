@@ -7,8 +7,8 @@ const eqArrays = function(arrayA, arrayB) {
     }
   }
   
-  return true
-}
+  return true;
+};
 
 const assertArraysEqual  = function(arrayA, arrayB) {
   if (eqArrays(arrayA, arrayB)) {
@@ -19,7 +19,7 @@ const assertArraysEqual  = function(arrayA, arrayB) {
 };
 
 const middle = function(array) {
-  if (array.length <= 2 ) return [];
+  if (array.length <= 2) return [];
   
   const result = [];
   
@@ -33,14 +33,14 @@ const middle = function(array) {
   }
   
   return result;
-}
+};
 
 // TEST CODEse
 
 assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2])
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);  
+assertArraysEqual(middle([1, 2, 3]), [2]);
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
 assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
 
