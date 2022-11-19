@@ -6,8 +6,8 @@ const eqArrays = function(arrayA, arrayB) {
       return false;
     }
   }
-  return true
-}
+  return true;
+};
 
 const assertArraysEqual  = function(arrayA, arrayB) {
   if (eqArrays(arrayA, arrayB)) {
@@ -20,6 +20,6 @@ const assertArraysEqual  = function(arrayA, arrayB) {
 // TEST CODEse
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
-assertArraysEqual([1, 2, 3], [3, 2, 1]);; // => false; 
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => false;
 assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
 assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false

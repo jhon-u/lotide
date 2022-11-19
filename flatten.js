@@ -1,13 +1,13 @@
 const flatten = function(array) {
   const result = [];
   
-  for(let item of array) {
+  for (let item of array) {
     if (Array.isArray(item)) {
       for (let innerItem of item) {
-        result.push(innerItem)
+        result.push(innerItem);
       }
     } else {
-      result.push(item)
+      result.push(item);
     }
   }
 
@@ -20,8 +20,8 @@ const eqArrays = function(arrayA, arrayB) {
       return false;
     }
   }
-  return true
-}
+  return true;
+};
 
 const assertArraysEqual  = function(arrayA, arrayB) {
   if (eqArrays(arrayA, arrayB)) {
@@ -33,4 +33,4 @@ const assertArraysEqual  = function(arrayA, arrayB) {
 
 // TEST CODE
 
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]); 
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);

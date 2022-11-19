@@ -1,3 +1,12 @@
+/*  If the final program were called pig-latin.js, then the following Terminal commands show several example outputs.
+    
+    node pig-latin.js pig latin
+    Result: igpay atinlay
+
+    node pig-latin.js this is all just gibberish
+    Result: histay siay llaay ustjay ibberishgay
+*/
+
 const translator = function(array) {
   let string = '';
 
@@ -20,12 +29,3 @@ const translator = function(array) {
 
 const args = process.argv.slice(2);
 console.log(translator(args));
-
-/*  If the final program were called pig-latin.js, then the following Terminal commands show several example outputs.
-    
-    node pig-latin.js pig latin
-    Result: igpay atinlay
-
-    node pig-latin.js this is all just gibberish
-    Result: histay siay llaay ustjay ibberishgay
-*/
