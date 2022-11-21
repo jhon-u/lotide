@@ -1,10 +1,17 @@
-const assertEqual = require('../assertEqual');
-const eqArrays = require('../eqArrays');
+const assert = require('chai').assert;
+const eqArrays   = require('../eqArrays');
 
-// TEST CODE
-
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true); // => true
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false); // => false
-
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false); // => false
-assertEqual(eqArrays([[[[[[[[[[[[[1]]]]]]]]]]]]], [[[[[[[[[[[[[1]]]]]]]]]]]]]), true); // => true
+describe("#eqArrays", () => {
+  it("returns true for [[2, 3], [4]], [[2, 3], [4]]", () => {
+    assert.isTrue(eqArrays([[2, 3], [4]], [[2, 3], [4]]));
+  });
+  it("returns false for [[2, 3], [4]], [[2, 3], [4, 5]]", () => {
+    assert.isFalse(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]));
+  });
+  it("returns false for [[2, 3], [4]], [[2, 3], 4]", () => {
+    assert.isFalse(eqArrays([[2, 3], [4]], [[2, 3], 4]));
+  });
+  it("returns true for [[[[[[[[[[[[[1]]]]]]]]]]]]], [[[[[[[[[[[[[1]]]]]]]]]]]]]", () => {
+    assert.isTrue(eqArrays([[[[[[[[[[[[[1]]]]]]]]]]]]], [[[[[[[[[[[[[1]]]]]]]]]]]]]));
+  });
+});
