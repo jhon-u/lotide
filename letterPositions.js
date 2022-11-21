@@ -1,22 +1,3 @@
-const eqArrays = function(arrayA, arrayB) {
-  if (arrayA.length !== arrayB.length) return false;
-  
-  for (let index in arrayA) {
-    if (arrayA[index] !== arrayB[index]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual  = function(arrayA, arrayB) {
-  if (eqArrays(arrayA, arrayB)) {
-    console.log(`✅✅✅ Assertion Passed: ${arrayA} === ${arrayB}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arrayA} !== ${arrayB}`);
-  }
-};
-
 const letterPositions = function(sentence) {
   const results = {};
   
@@ -32,7 +13,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-// TEST CODE
-
-const result = letterPositions("lighthouse in the house");
-assertArraysEqual(result['h'], [3, 5, 15, 18]);
+module.exports = letterPositions;
