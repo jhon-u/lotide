@@ -1,19 +1,19 @@
 {
-  "name": "lotide",
+  "name": "@jhonu/lotide",
   "version": "1.0.0",
   "description": "The Lotide project is inspired by the [Lodash](https://lodash.com/) project, which is a utility library for JavaScript. While Lodash itself is quite powerful, our version of it is simpler in order to focus on learning the fundamentals of programming and data management using JavaScript.",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jhon-u/lotide.git"
   },
-  "author": "",
+  "author": "Jhon Useche",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jhon-u/lotide/issues"
